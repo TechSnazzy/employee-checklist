@@ -48,7 +48,7 @@
         method="post"
         enctype="text/plain"
       >
-        <!-- Begin Employee Name -->
+        <!-- Employee name -->
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
             <label class="input-group-text" for="employee-name"
@@ -63,12 +63,63 @@
             placeholder="Enter employee first and last name"
           />
         </div>
-        <!-- End Employee Name -->
+        <!-- Employee name -->
+        <!-- Department -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-department"
+              >Department</label
+            >
+          </div>
+          <input
+            type="text"
+            id="department-name"
+            class="form-control"
+            name="Department"
+            placeholder="What department will they work in?"
+          />
+        </div>
+        <!-- Department -->
+        <!-- Manager -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-manager"
+              >Manager</label
+            >
+          </div>
+          <input
+            type="text"
+            id="manager-name"
+            class="form-control"
+            name="Manager"
+            placeholder="Whos is their manager?"
+          />
+        </div>
+        <!-- Manager -->
+        <!-- Start date -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-start-date"
+              >Start date</label
+            >
+          </div>
+          <input
+            type="date"
+            id="employee-start-date"
+            class="form-control"
+            name="Start date"
+          />
+        </div>
+        <!-- Start date -->
         <!-- Begin Buttons -->
         <div class="btn-group p-2">
           <input class="btn btn-primary" type="submit" value="SUBMIT" />
           <input class="btn btn-dark" type="reset" value="RESET" />
+          <button class="btn btn-success hidden-print" onclick="printPage()">
+            <i class="fas fa-print"></i>
+          </button>
         </div>
+
         <!-- End Buttons -->
         <!-- End Form -->
       </form>
