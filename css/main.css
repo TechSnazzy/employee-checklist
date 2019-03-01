@@ -1,11 +1,20 @@
 body {
-  font-family: font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-fluid {
-  width: 80%;
+  width: 60%;
 }
 
 .input-group-text {
   width: 200px;
+}
+
+.btn-group {
+  display: block;
+  text-align: center;
+}
+
+button {
+  width: 100px;
 }
