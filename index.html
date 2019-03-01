@@ -43,12 +43,16 @@
         <h1>Employee Onboarding Checklist</h1>
       </div>
       <!-- Begin Form -->
-      <form>
+      <form
+        action="mailto:seanmorrison@standardfiber.com?subject=New Employee"
+        method="post"
+        enctype="text/plain"
+      >
         <!-- Begin Employee Name -->
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="employee-name"
-              >Employee Name</span
+            <label class="input-group-text" id="employee-name"
+              >Employee Name</label
             >
           </div>
           <input
@@ -63,8 +67,8 @@
         <!-- Begin Department -->
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="employee-department"
-              >Department</span
+            <label class="input-group-text" id="employee-department"
+              >Department</label
             >
           </div>
           <input
@@ -79,7 +83,9 @@
         <!-- Begin Manager -->
         <div class="input-group input-group-lg">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="employee-manager">Manager</span>
+            <label class="input-group-text" id="employee-manager"
+              >Manager</label
+            >
           </div>
           <input
             type="text"
@@ -92,10 +98,8 @@
         <!-- End Manager -->
         <!-- Begin Buttons -->
         <div class="btn-group p-2">
-          <button type="submit" class="btn btn-primary">
-            SUBMIT
-          </button>
-          <button type="reset" class="btn btn-dark">RESET</button>
+          <input class="btn btn-primary" type="submit" value="SUBMIT" />
+          <input class="btn btn-dark" type="reset" value="RESET" />
         </div>
         <!-- End Buttons -->
         <!-- End Form -->
@@ -103,6 +107,9 @@
     </div>
 
     <!-- Optional JavaScript -->
+
+    <!-- Custom JavaScript -->
+    <script src="js/app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
