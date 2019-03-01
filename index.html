@@ -38,16 +38,29 @@
 
   <body>
     <div class="container-fluid">
-      <!-- Row 1 -->
-      <div class="row">
-        <div class="page-header bg-dark text-white text-center p-3">
-          <h1>Employee Onboarding Checklist</h1>
+      <!-- Header -->
+      <div class="page-header bg-dark text-white text-center p-3">
+        <h1>Employee Onboarding Checklist</h1>
+      </div>
+      <!-- Begin Form -->
+      <form>
+        <!-- Begin Employee Name -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="employee-name"
+              >Employee Name</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Large"
+            aria-describedby="employee-name"
+          />
         </div>
-      </div>
-      <!-- Row 2 -->
-      <div class="row">
-        Next section
-      </div>
+        <!-- End Employee Name -->
+        <!-- End Form -->
+      </form>
     </div>
 
     <!-- Optional JavaScript -->

@@ -5,3 +5,7 @@ body {
 .container-fluid {
   width: 700px;
 }
+
+.input-group-text {
+  width: 200px;
+}
