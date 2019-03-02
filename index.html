@@ -71,13 +71,21 @@
               >Department</label
             >
           </div>
-          <input
+          <select
+            id="employee-computer"
             type="text"
-            id="employee-department"
             class="form-control"
             name="Department"
-            placeholder="What department will they work in?"
-          />
+          >
+            <option disabled selected
+              >What department will they work in?</option
+            >
+            <option>None</option>
+            <option>Information Technology</option>
+            <option>Sales & Marketing</option>
+            <option>Production</option>
+            <option>Logistics</option>
+          </select>
         </div>
         <!-- Department -->
         <!-- Manager -->
@@ -132,6 +140,96 @@
           />
         </div>
         <!-- Start date -->
+        <!-- Email -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-email"
+              >Email Address</label
+            >
+          </div>
+          <input
+            type="email"
+            id="employee-email"
+            class="form-control"
+            name="Email address"
+            placeholder="What will their email address be?"
+          />
+        </div>
+        <!-- Email -->
+        <!-- Password -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-password"
+              >Password</label
+            >
+          </div>
+          <input
+            type="text"
+            id="employee-password"
+            class="form-control"
+            name="Password"
+            placeholder="Create a password"
+          />
+        </div>
+        <!-- Password -->
+        <!-- MFA status -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="mfa-status">MFA Status</label>
+          </div>
+          <select
+            id="mfa-status"
+            type="text"
+            class="form-control"
+            name="MFA Status"
+          >
+            <option disabled selected>What is the MFA status?</option>
+            <option>None</option>
+            <option>Enabled</option>
+            <option>Enforced</option>
+          </select>
+        </div>
+        <!-- MFA status -->
+        <!-- Asset Number -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="asset-number"
+              >Asset Number</label
+            >
+          </div>
+          <input
+            type="number"
+            id="asset-number"
+            class="form-control"
+            name="Asset Number"
+            placeholder="What is the asset number of their computer?"
+          />
+        </div>
+        <!-- Asset Number -->
+        <!-- Computer -->
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="employee-computer"
+              >Computer</label
+            >
+          </div>
+          <select
+            id="employee-computer"
+            type="text"
+            class="form-control"
+            name="Computer"
+          >
+            <option disabled selected
+              >What kind of computer will they use?</option
+            >
+            <option>None</option>
+            <option>Lenovo T450s</option>
+            <option>Lenovo T460s</option>
+            <option>Lenovo T480s</option>
+            <option>MacBook Pro</option>
+          </select>
+        </div>
+        <!-- Computer -->
         <!-- Begin Buttons -->
         <div class="btn-group p-3">
           <button class="btn btn-primary" type="submit">
@@ -144,7 +242,6 @@
             <i class="fas fa-print"></i>
           </button>
         </div>
-
         <!-- End Buttons -->
         <!-- End Form -->
       </form>
