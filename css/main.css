@@ -1,9 +1,10 @@
 body {
+  margin-top: 10px;
   font-family: 'Roboto', sans-serif;
 }
 
 .container-fluid {
-  width: 60%;
+  width: 800px;
 }
 
 .input-group-text {
@@ -17,4 +18,31 @@ body {
 
 .btn {
   width: 100px;
+}
+
+@media (max-width: 700px) {
+  .container-fluid {
+    width: 500px;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 1rem;
+  }
+  .container-fluid {
+    width: 300px;
+  }
+  .input-group-text {
+    width: 100px;
+  }
+  .input-group-lg > .input-group-prepend > .input-group-text {
+    font-size: 0.5rem;
+  }
+  .input-group-lg > .form-control {
+    font-size: 0.5rem;
+  }
+  .btn {
+    width: 75px;
+  }
 }

@@ -87,13 +87,20 @@
               >Manager</label
             >
           </div>
-          <input
-            type="text"
+          <select
             id="employee-manager"
+            type="text"
             class="form-control"
             name="Manager"
-            placeholder="Whos is their manager?"
-          />
+          >
+            <option disabled selected>Choose their manager</option>
+            <option>Sandy Gray</option>
+            <option>Russ Holbrook</option>
+            <option>Bob Moran</option>
+            <option>Brett Scharf</option>
+            <option>Shirley Yen</option>
+            <option>Marc Depierraz</option>
+          </select>
         </div>
         <!-- Manager -->
         <!-- Title -->
@@ -126,7 +133,7 @@
         </div>
         <!-- Start date -->
         <!-- Begin Buttons -->
-        <div class="btn-group p-2">
+        <div class="btn-group p-3">
           <button class="btn btn-primary" type="submit">
             <i class="far fa-envelope"></i>
           </button>
