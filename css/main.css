@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+#checkbox-container {
+  height: auto;
+}
+
 .btn {
   width: 100px;
 }
@@ -40,6 +44,9 @@ body {
     font-size: 0.5rem;
   }
   .input-group-lg > .form-control {
+    font-size: 0.5rem;
+  }
+  .form-check-label {
     font-size: 0.5rem;
   }
   .btn {
